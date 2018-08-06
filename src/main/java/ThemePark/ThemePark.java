@@ -2,23 +2,26 @@ package ThemePark;
 
 import ThemePark.Attractions.Attraction;
 
+import java.util.ArrayList;
+
 public class ThemePark {
 
-    Visitor visitor;
-    Attraction attraction;
+    private ArrayList<Visitor> themeparkVisitors;
+    private ArrayList<Attraction> themeparkAttractions;
 
-    public ThemePark(Visitor visitor, Attraction attraction) {
-        this.visitor = visitor;
-        this.attraction = attraction;
+
+    public ThemePark(ArrayList<Visitor> themeparkVisitors, ArrayList<Attraction> themeparkAttractions) {
+        this.themeparkVisitors =  new ArrayList<Visitor>();
+        this.themeparkAttractions = new ArrayList<Attraction>();
     }
 
-    public Visitor getVisitor() {
-        return visitor;
+    public ArrayList<Visitor> getThemeparkVisitors() {
+        return themeparkVisitors;
     }
 
-    public Attraction getAttraction() {
-        return attraction;
+    public ArrayList<Attraction> getThemeparkAttractions() {
+        return themeparkAttractions;
     }
-
 }
+
 
