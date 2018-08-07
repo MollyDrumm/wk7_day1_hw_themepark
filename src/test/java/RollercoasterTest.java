@@ -11,9 +11,16 @@ public class RollercoasterTest {
 
 
     @Test
-    public void checkIsAllowedToTrue() {
+    public void checkIsAllowedToFalse() {
         rollercoaster = new Rollercoaster("Mummy Returns");
         visitor = new Visitor(9, 4.00, 5.00);
         assertEquals(false, rollercoaster.isAllowedTo(visitor));
+    }
+
+    @Test
+    public void checkIsAllowedToTrue() {
+        rollercoaster = new Rollercoaster("Mummy Returns");
+        visitor = new Visitor(9, 4.00, 5.00);
+        assertEquals(true, rollercoaster.isAllowedTo(visitor));
     }
 }
