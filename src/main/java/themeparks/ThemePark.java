@@ -17,7 +17,12 @@ public class ThemePark {
         this.themeparkAttractions = new ArrayList<Attraction>();
         this.themeparkStalls = new ArrayList<Stall>();
     }
-    
+
+    public ArrayList<Visitor> getThemeparkVisitors() {
+        return themeparkVisitors;
+    }
+
+
 }
 
 
