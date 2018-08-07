@@ -1,6 +1,6 @@
-import ThemePark.Visitor;
 import org.junit.Before;
 import org.junit.Test;
+import visitors.Visitor;
 
 import static org.junit.Assert.assertEquals;
 
